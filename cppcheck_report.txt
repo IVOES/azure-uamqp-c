@@ -1,0 +1,1181 @@
+samples/eh_sender_with_sas_token_sample/main.c:196:22: style: The scope of the variable 'i' can be reduced. [variableScope]
+            uint32_t i;
+                     ^
+samples/eh_sender_with_sas_token_sample/main.c:197:18: style: The scope of the variable 'keep_running' can be reduced. [variableScope]
+            bool keep_running = true;
+                 ^
+samples/local_client_sample/main.c:52:16: style: The scope of the variable 'last_memory_used' can be reduced. [variableScope]
+        size_t last_memory_used = 0;
+               ^
+samples/local_client_sample/main.c:87:22: style: The scope of the variable 'i' can be reduced. [variableScope]
+            uint32_t i;
+                     ^
+samples/local_client_sample/main.c:88:18: style: The scope of the variable 'keep_running' can be reduced. [variableScope]
+            bool keep_running = true;
+                 ^
+samples/local_server_sample/main.c:110:35: style: Condition 'sent_messages==msg_count' is always false [knownConditionTrueFalse]
+                if (sent_messages == msg_count)
+                                  ^
+samples/local_server_sample/main.c:82:16: style: The scope of the variable 'last_memory_used' can be reduced. [variableScope]
+        size_t last_memory_used = 0;
+               ^
+samples/local_server_tls_sample/main.c:129:35: style: Condition 'sent_messages==msg_count' is always false [knownConditionTrueFalse]
+                if (sent_messages == msg_count)
+                                  ^
+samples/local_server_tls_sample/main.c:100:16: style: The scope of the variable 'last_memory_used' can be reduced. [variableScope]
+        size_t last_memory_used = 0;
+               ^
+samples/local_server_tls_sample/tls_server_io_schannel.c:478:12: style: The scope of the variable 'consumed_bytes' can be reduced. [variableScope]
+    size_t consumed_bytes;
+           ^
+samples/local_server_tls_sample/tls_server_io_schannel.c:298:0: information: Skipping configuration 'SP_PROT_TLS1_2_SERVER' since the value of 'SP_PROT_TLS1_2_SERVER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            auth_data.grbitEnabledProtocols = SP_PROT_TLS1_2_SERVER;
+^
+samples/message_receiver_sample/main.c:49:16: style: The scope of the variable 'last_memory_used' can be reduced. [variableScope]
+        size_t last_memory_used = 0;
+               ^
+samples/message_sender_sample/main.c:64:16: style: The scope of the variable 'last_memory_used' can be reduced. [variableScope]
+        size_t last_memory_used = 0;
+               ^
+samples/message_sender_sample/main.c:110:22: style: The scope of the variable 'i' can be reduced. [variableScope]
+            uint32_t i;
+                     ^
+samples/message_sender_sample/main.c:111:18: style: The scope of the variable 'keep_running' can be reduced. [variableScope]
+            bool keep_running = true;
+                 ^
+samples/mssbcbs_sample/main.c:60:9: style: The scope of the variable 'result' can be reduced. [variableScope]
+    int result;
+        ^
+samples/mssbcbs_sample/main.c:67:16: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+        result = -1;
+               ^
+src/amqp_definitions.c:143:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(error_instance->composite_value, 0, condition_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:140:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:143:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(error_instance->composite_value, 0, condition_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:676:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(open_instance->composite_value, 0, container_id_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:673:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:676:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(open_instance->composite_value, 0, container_id_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:2251:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(begin_instance->composite_value, 1, next_outgoing_id_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:2248:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:2251:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(begin_instance->composite_value, 1, next_outgoing_id_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:3496:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(attach_instance->composite_value, 0, name_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:3493:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:3496:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(attach_instance->composite_value, 0, name_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:5411:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(flow_instance->composite_value, 1, incoming_window_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:5408:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:5411:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(flow_instance->composite_value, 1, incoming_window_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:6868:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(transfer_instance->composite_value, 0, handle_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:6865:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:6868:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(transfer_instance->composite_value, 0, handle_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:8295:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(disposition_instance->composite_value, 0, role_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:8292:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:8295:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(disposition_instance->composite_value, 0, role_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:9159:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(detach_instance->composite_value, 0, handle_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:9156:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:9159:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(detach_instance->composite_value, 0, handle_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:10193:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(sasl_mechanisms_instance->composite_value, 0, sasl_server_mechanisms_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:10190:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:10193:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(sasl_mechanisms_instance->composite_value, 0, sasl_server_mechanisms_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:10540:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(sasl_init_instance->composite_value, 0, mechanism_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:10537:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:10540:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(sasl_init_instance->composite_value, 0, mechanism_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:11045:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(sasl_challenge_instance->composite_value, 0, challenge_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:11042:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:11045:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(sasl_challenge_instance->composite_value, 0, challenge_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:11326:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(sasl_response_instance->composite_value, 0, response_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:11323:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:11326:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(sasl_response_instance->composite_value, 0, response_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:11607:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(sasl_outcome_instance->composite_value, 0, code_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:11604:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:11607:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(sasl_outcome_instance->composite_value, 0, code_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:17204:25: style: The comparison 'result == 0' is always true. [knownConditionTrueFalse]
+            if ((result == 0) && (amqpvalue_set_composite_item(received_instance->composite_value, 0, section_number_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:17201:26: note: 'result' is assigned value '0' here.
+            int result = 0;
+                         ^
+src/amqp_definitions.c:17204:25: note: The comparison 'result == 0' is always true.
+            if ((result == 0) && (amqpvalue_set_composite_item(received_instance->composite_value, 0, section_number_amqp_value) != 0))
+                        ^
+src/amqp_definitions.c:381:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:1125:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:2674:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:4061:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:5917:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:7322:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:8622:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:9401:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:9831:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:10085:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:10375:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:10778:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:11225:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:11506:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:11816:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:12439:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:13849:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:14860:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:16102:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:17431:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:17905:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_definitions.c:18350:28: style: Checking if unsigned expression 'item_count' is less than zero. [unsignedLessThanZero]
+            if (item_count <= 0)
+                           ^
+src/amqp_frame_codec.c:60:14: style: The scope of the variable 'channel' can be reduced. [variableScope]
+    uint16_t channel;
+             ^
+src/amqpvalue.c:5237:23: portability: Casting from float * to unsigned int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+                    *((uint32_t*)&internal_decoder_data->decode_to_value->value.float_value) = 0;
+                      ^
+src/amqpvalue.c:5250:23: portability: Casting from double * to unsigned long * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+                    *((uint64_t*)&internal_decoder_data->decode_to_value->value.double_value) = 0;
+                      ^
+src/amqpvalue.c:5735:23: portability: Casting from float * to unsigned int * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+                    *((uint32_t*)&internal_decoder_data->decode_to_value->value.float_value) += ((uint32_t)buffer[0]) << ((3 - internal_decoder_data->bytes_decoded) * 8);
+                      ^
+src/amqpvalue.c:5757:23: portability: Casting from double * to unsigned long * is not portable due to different binary data representations on different platforms. [invalidPointerCast]
+                    *((uint64_t*)&internal_decoder_data->decode_to_value->value.double_value) += ((uint64_t)buffer[0]) << ((7 - internal_decoder_data->bytes_decoded) * 8);
+                      ^
+src/amqpvalue.c:3720:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+    size_t i;
+           ^
+src/amqpvalue.c:3766:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+    size_t i;
+           ^
+src/amqpvalue.c:3942:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+    size_t i;
+           ^
+src/amqpvalue.c:4004:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+    size_t i;
+           ^
+src/amqpvalue.c:4170:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+    size_t i;
+           ^
+src/amqpvalue.c:4222:12: style: The scope of the variable 'i' can be reduced. [variableScope]
+    size_t i;
+           ^
+src/amqpvalue.c:6291:42: style: The scope of the variable 'i' can be reduced. [variableScope]
+                                uint32_t i;
+                                         ^
+src/amqpvalue.c:6329:46: style: The scope of the variable 'i' can be reduced. [variableScope]
+                                    uint32_t i;
+                                             ^
+src/amqpvalue.c:6501:42: style: The scope of the variable 'i' can be reduced. [variableScope]
+                                uint32_t i;
+                                         ^
+src/amqpvalue.c:6738:42: style: The scope of the variable 'i' can be reduced. [variableScope]
+                                uint32_t i;
+                                         ^
+src/amqpvalue.c:6772:46: style: The scope of the variable 'i' can be reduced. [variableScope]
+                                    uint32_t i;
+                                             ^
+src/frame_codec.c:612:16: style: The scope of the variable 'frame_size' can be reduced. [variableScope]
+        size_t frame_size;
+               ^
+src/frame_codec.c:671:35: style: The scope of the variable 'padding_bytes' can be reduced. [variableScope]
+                    unsigned char padding_bytes[] = { 0x00, 0x00, 0x00 };
+                                  ^
+src/message.c:235:24: style: The scope of the variable 'i' can be reduced. [variableScope]
+                size_t i;
+                       ^
+src/message.c:276:24: style: The scope of the variable 'i' can be reduced. [variableScope]
+                size_t i;
+                       ^
+src/message_sender.c:109:73: warning: Either the condition 'message_with_callback!=NULL' is redundant or there is possible null pointer dereference: message_with_callback. [nullPointerRedundantCheck]
+    MESSAGE_SENDER_INSTANCE* message_sender = (MESSAGE_SENDER_INSTANCE*)message_with_callback->message_sender;
+                                                                        ^
+src/message_sender.c:112:31: note: Assuming that condition 'message_with_callback!=NULL' is not redundant
+    if (message_with_callback != NULL &&
+                              ^
+src/message_sender.c:109:73: note: Null pointer dereference
+    MESSAGE_SENDER_INSTANCE* message_sender = (MESSAGE_SENDER_INSTANCE*)message_with_callback->message_sender;
+                                                                        ^
+src/message_sender.c:219:12: style: The scope of the variable 'total_encoded_size' can be reduced. [variableScope]
+    size_t total_encoded_size = 0;
+           ^
+src/sasl_plain.c:78:25: error: Memory leak: result [memleak]
+                        result = NULL;
+                        ^
+src/saslclientio.c:42:1: error: There is an unknown macro here somewhere. Configuration is required. If MU_DEFINE_LOCAL_ENUM is a macro then please configure it. [unknownMacro]
+MU_DEFINE_LOCAL_ENUM(SASL_HEADER_EXCHANGE_STATE, SASL_HEADER_EXCHANGE_STATE_VALUES)
+^
+src/session.c:771:32: style: Variable 'result->handle_max' is reassigned a value before the old one has been used. [redundantAssignment]
+            result->handle_max = 4294967295u;
+                               ^
+src/session.c:762:32: note: result->handle_max is assigned
+            result->handle_max = 4294967295u;
+                               ^
+src/session.c:771:32: note: result->handle_max is overwritten
+            result->handle_max = 4294967295u;
+                               ^
+src/session.c:821:32: style: Variable 'result->handle_max' is reassigned a value before the old one has been used. [redundantAssignment]
+            result->handle_max = 4294967295u;
+                               ^
+src/session.c:814:32: note: result->handle_max is assigned
+            result->handle_max = 4294967295u;
+                               ^
+src/session.c:821:32: note: result->handle_max is overwritten
+            result->handle_max = 4294967295u;
+                               ^
+tests/amqp_frame_codec_ut/amqp_frame_codec_ut.c:320:25: error: syntax error [syntaxError]
+MOCK_FUNCTION_WITH_CODE(, void, amqp_empty_frame_received_callback_1, void*, context, uint16_t, channel);
+                        ^
+tests/amqp_management_ut/amqp_management_ut.c:102:25: error: syntax error [syntaxError]
+MOCK_FUNCTION_WITH_CODE(, void, test_amqp_management_open_complete, void*, context, AMQP_MANAGEMENT_OPEN_RESULT, open_result)
+                        ^
+tests/amqpvalue_ut/amqpvalue_ut.c:110:5: error: syntax error: keyword 'if' is not allowed in global scope [syntaxError]
+    if (new_bytes != NULL)
+    ^
+tests/async_operation_ut/async_operation_ut.c:45:25: error: syntax error [syntaxError]
+MOCK_FUNCTION_WITH_CODE(, void, test_cancel_handler, ASYNC_OPERATION_HANDLE, async_operation)
+                        ^
+tests/cbs_ut/cbs_ut.c:74:25: error: syntax error [syntaxError]
+MOCK_FUNCTION_WITH_CODE(, void, test_on_cbs_open_complete, void*, context, CBS_OPEN_COMPLETE_RESULT, open_complete_result);
+                        ^
+tests/connection_ut/connection_ut.c:132:1: error: There is an unknown macro here somewhere. Configuration is required. If MOCK_FUNCTION_WITH_CODE is a macro then please configure it. [unknownMacro]
+MOCK_FUNCTION_WITH_CODE(, void, test_on_connection_state_changed, void*, context, CONNECTION_STATE, new_connection_state, CONNECTION_STATE, previous_connection_state)
+^
+tests/frame_codec_ut/frame_codec_ut.c:89:1: error: There is an unknown macro here somewhere. Configuration is required. If MOCK_FUNCTION_WITH_CODE is a macro then please configure it. [unknownMacro]
+MOCK_FUNCTION_WITH_CODE(, void, on_frame_received_2, void*, context, const unsigned char*, type_specific, uint32_t, type_specific_size, const unsigned char*, frame_body, uint32_t, frame_body_size)
+^
+tests/header_detect_io_ut/header_detect_io_ut.c:152:1: error: There is an unknown macro here somewhere. Configuration is required. If MOCK_FUNCTION_WITH_CODE is a macro then please configure it. [unknownMacro]
+MOCK_FUNCTION_WITH_CODE(, void, test_on_bytes_received, void*, context, const unsigned char*, buffer, size_t, size)
+^
+tests/iothub_e2e/iothub_e2e.c:36:12: style: struct member 'SERVER_INSTANCE_TAG::received_messages' is never used. [unusedStructMember]
+    size_t received_messages;
+           ^
+tests/iothub_e2e/iothub_e2e.c:273:19: style: Variable 'target_length' is assigned a value that is never used. [unreadVariable]
+    target_length = snprintf(target_string, target_length + 1, "amqps://%s/devices/%s/messages/events", hostname, "eh_testdevice");
+                  ^
+tests/local_client_server_tcp_perf/local_client_server_tcp_perf.c:374:30: style: The scope of the variable 'keep_running' can be reduced. [variableScope]
+                        bool keep_running = true;
+                             ^
+tests/local_client_server_tcp_perf/local_client_server_tcp_perf.c:386:58: style: The scope of the variable 'server_connected_client' can be reduced. [variableScope]
+                                SERVER_CONNECTED_CLIENT* server_connected_client;
+                                                         ^
+tests/local_client_server_tcp_perf/local_client_server_tcp_perf.c:253:16: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+        result = -1;
+               ^
+tests/local_client_server_tcp_perf/local_client_server_tcp_perf.c:261:20: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+            result = -1;
+                   ^
+tests/local_client_server_tcp_perf/local_client_server_tcp_perf.c:272:24: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+                result = -1;
+                       ^
+tests/local_client_server_tcp_perf/local_client_server_tcp_perf.c:279:28: style: Variable 'result' is assigned a value that is never used. [unreadVariable]
+                    result = -1;
+                           ^
+tests/message_ut/message_ut.c:352:23: style: Variable 'binary_data.bytes' is assigned a value that is never used. [unreadVariable]
+    binary_data.bytes = data_section;
+                      ^
+tests/message_ut/message_ut.c:353:24: style: Variable 'binary_data.length' is assigned a value that is never used. [unreadVariable]
+    binary_data.length = sizeof(data_section);
+                       ^
+tests/sasl_frame_codec_ut/sasl_frame_codec_ut.c:279:1: error: There is an unknown macro here somewhere. Configuration is required. If MOCK_FUNCTION_WITH_CODE is a macro then please configure it. [unknownMacro]
+MOCK_FUNCTION_WITH_CODE(, void, test_on_sasl_frame_codec_error, void*, context)
+^
+tests/sasl_mechanism_ut/sasl_mechanism_ut.c:41:1: error: There is an unknown macro here somewhere. Configuration is required. If MOCK_FUNCTION_WITH_CODE is a macro then please configure it. [unknownMacro]
+MOCK_FUNCTION_WITH_CODE(, void, test_saslmechanism_destroy, CONCRETE_SASL_MECHANISM_HANDLE, concrete_sasl_mechanism)
+^
+tests/sasl_server_mechanism_ut/sasl_server_mechanism_ut.c:41:1: error: There is an unknown macro here somewhere. Configuration is required. If MOCK_FUNCTION_WITH_CODE is a macro then please configure it. [unknownMacro]
+MOCK_FUNCTION_WITH_CODE(, void, test_sasl_server_mechanism_destroy, CONCRETE_SASL_SERVER_MECHANISM_HANDLE, concrete_sasl_server_mechanism)
+^
+tests/saslclientio_ut/saslclientio_ut.c:347:25: error: syntax error [syntaxError]
+MOCK_FUNCTION_WITH_CODE(, void, test_on_bytes_received, void*, context, const unsigned char*, buffer, size_t, size)
+                        ^
+tests/session_ut/session_ut.c:68:1: error: There is an unknown macro here somewhere. Configuration is required. If MOCK_FUNCTION_WITH_CODE is a macro then please configure it. [unknownMacro]
+MOCK_FUNCTION_WITH_CODE(, void, test_on_session_state_changed, void*, context, SESSION_STATE, new_session_state, SESSION_STATE, previous_session_state)
+^
+src/amqp_definitions.c:17614:0: style: The function 'accepted_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14555:0: style: The function 'amqpvalue_create_address_string' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:615:0: style: The function 'amqpvalue_create_amqp_error' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:15492:0: style: The function 'amqpvalue_create_amqp_sequence' is never used. [unusedFunction]
+
+^
+src/amqpvalue.c:485:0: style: The function 'amqpvalue_create_byte' is never used. [unusedFunction]
+
+^
+src/amqpvalue.c:802:0: style: The function 'amqpvalue_create_char' is never used. [unusedFunction]
+
+^
+src/amqpvalue.c:7118:0: style: The function 'amqpvalue_create_composite' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:622:0: style: The function 'amqpvalue_create_connection_error' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:15300:0: style: The function 'amqpvalue_create_delivery_annotations' is never used. [unusedFunction]
+
+^
+src/amqpvalue.c:749:0: style: The function 'amqpvalue_create_double' is never used. [unusedFunction]
+
+^
+src/amqpvalue.c:696:0: style: The function 'amqpvalue_create_float' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:15588:0: style: The function 'amqpvalue_create_footer' is never used. [unusedFunction]
+
+^
+src/amqpvalue.c:590:0: style: The function 'amqpvalue_create_int' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:636:0: style: The function 'amqpvalue_create_link_error' is never used. [unusedFunction]
+
+^
+src/amqpvalue.c:643:0: style: The function 'amqpvalue_create_long' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14541:0: style: The function 'amqpvalue_create_message_id_binary' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14548:0: style: The function 'amqpvalue_create_message_id_string' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14534:0: style: The function 'amqpvalue_create_message_id_uuid' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11089:0: style: The function 'amqpvalue_create_sasl_challenge' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10584:0: style: The function 'amqpvalue_create_sasl_init' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10237:0: style: The function 'amqpvalue_create_sasl_mechanisms' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11651:0: style: The function 'amqpvalue_create_sasl_outcome' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11370:0: style: The function 'amqpvalue_create_sasl_response' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:629:0: style: The function 'amqpvalue_create_session_error' is never used. [unusedFunction]
+
+^
+src/amqpvalue.c:538:0: style: The function 'amqpvalue_create_short' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17676:0: style: The function 'amqpvalue_get_accepted' is never used. [unusedFunction]
+
+^
+src/amqpvalue.c:7231:0: style: The function 'amqpvalue_get_composite_item' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:18204:0: style: The function 'amqpvalue_get_modified' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17290:0: style: The function 'amqpvalue_get_received' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17813:0: style: The function 'amqpvalue_get_rejected' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:18067:0: style: The function 'amqpvalue_get_released' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11125:0: style: The function 'amqpvalue_get_sasl_challenge' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10620:0: style: The function 'amqpvalue_get_sasl_init' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10273:0: style: The function 'amqpvalue_get_sasl_mechanisms' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11687:0: style: The function 'amqpvalue_get_sasl_outcome' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11406:0: style: The function 'amqpvalue_get_sasl_response' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12089:0: style: The function 'amqpvalue_get_source' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13601:0: style: The function 'amqpvalue_get_target' is never used. [unusedFunction]
+
+^
+src/async_operation.c:18:0: style: The function 'async_operation_create' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:3526:0: style: The function 'attach_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:5143:0: style: The function 'attach_get_desired_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:4737:0: style: The function 'attach_get_incomplete_unsettled' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:4996:0: style: The function 'attach_get_offered_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:4385:0: style: The function 'attach_get_rcv_settle_mode' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:4292:0: style: The function 'attach_get_snd_settle_mode' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:4646:0: style: The function 'attach_get_unsettled' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:5248:0: style: The function 'attach_set_desired_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:4796:0: style: The function 'attach_set_incomplete_unsettled' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:4092:0: style: The function 'attach_set_name' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:5101:0: style: The function 'attach_set_offered_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:4695:0: style: The function 'attach_set_unsettled' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:2281:0: style: The function 'begin_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:3228:0: style: The function 'begin_get_desired_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:2988:0: style: The function 'begin_get_handle_max' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:3081:0: style: The function 'begin_get_offered_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:2905:0: style: The function 'begin_get_outgoing_window' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:3375:0: style: The function 'begin_get_properties' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:3333:0: style: The function 'begin_set_desired_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:2871:0: style: The function 'begin_set_incoming_window' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:2788:0: style: The function 'begin_set_next_outgoing_id' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:3186:0: style: The function 'begin_set_offered_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:2954:0: style: The function 'begin_set_outgoing_window' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:3424:0: style: The function 'begin_set_properties' is never used. [unusedFunction]
+
+^
+src/cbs.c:424:0: style: The function 'cbs_close' is never used. [unusedFunction]
+
+^
+src/cbs.c:650:0: style: The function 'cbs_delete_token_async' is never used. [unusedFunction]
+
+^
+src/cbs.c:774:0: style: The function 'cbs_set_trace' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:9931:0: style: The function 'close_clone' is never used. [unusedFunction]
+
+^
+src/connection.c:1543:0: style: The function 'connection_get_channel_max' is never used. [unusedFunction]
+
+^
+src/connection.c:1600:0: style: The function 'connection_get_idle_timeout' is never used. [unusedFunction]
+
+^
+src/connection.c:1487:0: style: The function 'connection_get_max_frame_size' is never used. [unusedFunction]
+
+^
+src/connection.c:1690:0: style: The function 'connection_get_properties' is never used. [unusedFunction]
+
+^
+src/connection.c:1511:0: style: The function 'connection_set_channel_max' is never used. [unusedFunction]
+
+^
+src/connection.c:1567:0: style: The function 'connection_set_idle_timeout' is never used. [unusedFunction]
+
+^
+src/connection.c:1448:0: style: The function 'connection_set_max_frame_size' is never used. [unusedFunction]
+
+^
+src/connection.c:1624:0: style: The function 'connection_set_properties' is never used. [unusedFunction]
+
+^
+src/connection.c:2103:0: style: The function 'connection_set_remote_idle_timeout_empty_frame_send_ratio' is never used. [unusedFunction]
+
+^
+src/connection.c:2161:0: style: The function 'connection_unsubscribe_on_connection_close_received' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:9177:0: style: The function 'detach_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:8319:0: style: The function 'disposition_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:9030:0: style: The function 'disposition_get_batchable' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:8604:0: style: The function 'disposition_get_role' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:9089:0: style: The function 'disposition_set_batchable' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:8736:0: style: The function 'disposition_set_first' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:8653:0: style: The function 'disposition_set_role' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:9677:0: style: The function 'end_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:9813:0: style: The function 'end_get_error' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:161:0: style: The function 'error_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:446:0: style: The function 'error_get_description' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:412:0: style: The function 'error_set_condition' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:5441:0: style: The function 'flow_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:6480:0: style: The function 'flow_get_available' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:6563:0: style: The function 'flow_get_drain' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:6656:0: style: The function 'flow_get_echo' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:6148:0: style: The function 'flow_get_outgoing_window' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:6749:0: style: The function 'flow_get_properties' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:6529:0: style: The function 'flow_set_available' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:6622:0: style: The function 'flow_set_drain' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:6715:0: style: The function 'flow_set_echo' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:6798:0: style: The function 'flow_set_properties' is never used. [unusedFunction]
+
+^
+src/header_detect_io.c:959:0: style: The function 'header_detect_io_get_sasl_amqp_header' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:15204:0: style: The function 'header_get_delivery_count' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14842:0: style: The function 'header_get_durable' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:15111:0: style: The function 'header_get_first_acquirer' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14935:0: style: The function 'header_get_priority' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:15028:0: style: The function 'header_get_ttl' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:15520:0: style: The function 'is_amqp_sequence_type_by_descriptor' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:204:0: style: The function 'is_error_type_by_descriptor' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:18185:0: style: The function 'is_modified_type_by_descriptor' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17271:0: style: The function 'is_received_type_by_descriptor' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17794:0: style: The function 'is_rejected_type_by_descriptor' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:18048:0: style: The function 'is_released_type_by_descriptor' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12070:0: style: The function 'is_source_type_by_descriptor' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13582:0: style: The function 'is_target_type_by_descriptor' is never used. [unusedFunction]
+
+^
+src/link.c:1601:0: style: The function 'link_dowork' is never used. [unusedFunction]
+
+^
+src/link.c:1035:0: style: The function 'link_get_initial_delivery_count' is never used. [unusedFunction]
+
+^
+src/link.c:1073:0: style: The function 'link_get_max_message_size' is never used. [unusedFunction]
+
+^
+src/link.c:1093:0: style: The function 'link_get_peer_max_message_size' is never used. [unusedFunction]
+
+^
+src/link.c:997:0: style: The function 'link_get_rcv_settle_mode' is never used. [unusedFunction]
+
+^
+src/link.c:958:0: style: The function 'link_get_snd_settle_mode' is never used. [unusedFunction]
+
+^
+src/link.c:1017:0: style: The function 'link_set_initial_delivery_count' is never used. [unusedFunction]
+
+^
+src/link.c:1145:0: style: The function 'link_set_max_link_credit' is never used. [unusedFunction]
+
+^
+src/link.c:1681:0: style: The function 'link_unsubscribe_on_link_detach_received' is never used. [unusedFunction]
+
+^
+src/message_receiver.c:424:0: style: The function 'messagereceiver_get_link_name' is never used. [unusedFunction]
+
+^
+src/message_receiver.c:449:0: style: The function 'messagereceiver_get_received_message_id' is never used. [unusedFunction]
+
+^
+src/message_receiver.c:474:0: style: The function 'messagereceiver_send_message_disposition' is never used. [unusedFunction]
+
+^
+src/messaging.c:252:0: style: The function 'messaging_delivery_modified' is never used. [unusedFunction]
+
+^
+src/messaging.c:105:0: style: The function 'messaging_delivery_received' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:18142:0: style: The function 'modified_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:18332:0: style: The function 'modified_get_delivery_failed' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:18498:0: style: The function 'modified_get_message_annotations' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:18415:0: style: The function 'modified_get_undeliverable_here' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:694:0: style: The function 'open_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1366:0: style: The function 'open_get_channel_max' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1107:0: style: The function 'open_get_container_id' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1983:0: style: The function 'open_get_desired_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1190:0: style: The function 'open_get_hostname' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1689:0: style: The function 'open_get_incoming_locales' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1836:0: style: The function 'open_get_offered_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1542:0: style: The function 'open_get_outgoing_locales' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:2130:0: style: The function 'open_get_properties' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1156:0: style: The function 'open_set_container_id' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:2088:0: style: The function 'open_set_desired_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1794:0: style: The function 'open_set_incoming_locales' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1941:0: style: The function 'open_set_offered_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:1647:0: style: The function 'open_set_outgoing_locales' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16752:0: style: The function 'properties_get_absolute_expiry_time' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16669:0: style: The function 'properties_get_content_encoding' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16586:0: style: The function 'properties_get_content_type' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16835:0: style: The function 'properties_get_creation_time' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16918:0: style: The function 'properties_get_group_id' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17001:0: style: The function 'properties_get_group_sequence' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16084:0: style: The function 'properties_get_message_id' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16418:0: style: The function 'properties_get_reply_to' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17084:0: style: The function 'properties_get_reply_to_group_id' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16335:0: style: The function 'properties_get_subject' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16251:0: style: The function 'properties_get_to' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16168:0: style: The function 'properties_get_user_id' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:16544:0: style: The function 'properties_set_correlation_id' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17228:0: style: The function 'received_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17413:0: style: The function 'received_get_section_number' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17496:0: style: The function 'received_get_section_offset' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17462:0: style: The function 'received_set_section_number' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17545:0: style: The function 'received_set_section_offset' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17751:0: style: The function 'rejected_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:17887:0: style: The function 'rejected_get_error' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:18005:0: style: The function 'released_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11063:0: style: The function 'sasl_challenge_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11028:0: style: The function 'sasl_challenge_create' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11207:0: style: The function 'sasl_challenge_get_challenge' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11256:0: style: The function 'sasl_challenge_set_challenge' is never used. [unusedFunction]
+
+^
+src/sasl_frame_codec.c:153:0: style: The function 'sasl_frame_codec_create' is never used. [unusedFunction]
+
+^
+src/sasl_frame_codec.c:210:0: style: The function 'sasl_frame_codec_destroy' is never used. [unusedFunction]
+
+^
+src/sasl_frame_codec.c:232:0: style: The function 'sasl_frame_codec_encode_frame' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10558:0: style: The function 'sasl_init_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10523:0: style: The function 'sasl_init_create' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10926:0: style: The function 'sasl_init_get_hostname' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10843:0: style: The function 'sasl_init_get_initial_response' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10760:0: style: The function 'sasl_init_get_mechanism' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10975:0: style: The function 'sasl_init_set_hostname' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10892:0: style: The function 'sasl_init_set_initial_response' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10809:0: style: The function 'sasl_init_set_mechanism' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10211:0: style: The function 'sasl_mechanisms_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10176:0: style: The function 'sasl_mechanisms_create' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10357:0: style: The function 'sasl_mechanisms_get_sasl_server_mechanisms' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:10462:0: style: The function 'sasl_mechanisms_set_sasl_server_mechanisms' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11625:0: style: The function 'sasl_outcome_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11590:0: style: The function 'sasl_outcome_create' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11881:0: style: The function 'sasl_outcome_get_additional_data' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11798:0: style: The function 'sasl_outcome_get_code' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11930:0: style: The function 'sasl_outcome_set_additional_data' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11847:0: style: The function 'sasl_outcome_set_code' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11344:0: style: The function 'sasl_response_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11309:0: style: The function 'sasl_response_create' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11488:0: style: The function 'sasl_response_get_response' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:11537:0: style: The function 'sasl_response_set_response' is never used. [unusedFunction]
+
+^
+src/sasl_server_mechanism.c:16:0: style: The function 'sasl_server_mechanism_create' is never used. [unusedFunction]
+
+^
+src/sasl_server_mechanism.c:69:0: style: The function 'sasl_server_mechanism_destroy' is never used. [unusedFunction]
+
+^
+src/sasl_server_mechanism.c:143:0: style: The function 'sasl_server_mechanism_get_mechanism_name' is never used. [unusedFunction]
+
+^
+src/sasl_server_mechanism.c:85:0: style: The function 'sasl_server_mechanism_handle_initial_response' is never used. [unusedFunction]
+
+^
+src/sasl_server_mechanism.c:114:0: style: The function 'sasl_server_mechanism_handle_response' is never used. [unusedFunction]
+
+^
+src/sasl_mechanism.c:138:0: style: The function 'saslmechanism_challenge' is never used. [unusedFunction]
+
+^
+src/sasl_mechanism.c:84:0: style: The function 'saslmechanism_get_init_bytes' is never used. [unusedFunction]
+
+^
+src/sasl_mechanism.c:113:0: style: The function 'saslmechanism_get_mechanism_name' is never used. [unusedFunction]
+
+^
+src/session.c:1073:0: style: The function 'session_get_handle_max' is never used. [unusedFunction]
+
+^
+src/session.c:991:0: style: The function 'session_get_incoming_window' is never used. [unusedFunction]
+
+^
+src/session.c:1032:0: style: The function 'session_get_outgoing_window' is never used. [unusedFunction]
+
+^
+src/session.c:1053:0: style: The function 'session_set_handle_max' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12027:0: style: The function 'source_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12421:0: style: The function 'source_get_address' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13357:0: style: The function 'source_get_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13126:0: style: The function 'source_get_default_outcome' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12960:0: style: The function 'source_get_distribution_mode' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12505:0: style: The function 'source_get_durable' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12784:0: style: The function 'source_get_dynamic' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12877:0: style: The function 'source_get_dynamic_node_properties' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12598:0: style: The function 'source_get_expiry_policy' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13043:0: style: The function 'source_get_filter' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13210:0: style: The function 'source_get_outcomes' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12691:0: style: The function 'source_get_timeout' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13462:0: style: The function 'source_set_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13168:0: style: The function 'source_set_default_outcome' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13009:0: style: The function 'source_set_distribution_mode' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12564:0: style: The function 'source_set_durable' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12843:0: style: The function 'source_set_dynamic' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12926:0: style: The function 'source_set_dynamic_node_properties' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12657:0: style: The function 'source_set_expiry_policy' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13092:0: style: The function 'source_set_filter' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13315:0: style: The function 'source_set_outcomes' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:12750:0: style: The function 'source_set_timeout' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13539:0: style: The function 'target_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13831:0: style: The function 'target_get_address' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14370:0: style: The function 'target_get_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13915:0: style: The function 'target_get_durable' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14194:0: style: The function 'target_get_dynamic' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14287:0: style: The function 'target_get_dynamic_node_properties' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14008:0: style: The function 'target_get_expiry_policy' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14101:0: style: The function 'target_get_timeout' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14475:0: style: The function 'target_set_capabilities' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:13974:0: style: The function 'target_set_durable' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14253:0: style: The function 'target_set_dynamic' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14336:0: style: The function 'target_set_dynamic_node_properties' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14067:0: style: The function 'target_set_expiry_policy' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:14160:0: style: The function 'target_set_timeout' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:6886:0: style: The function 'transfer_clone' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:8072:0: style: The function 'transfer_get_aborted' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:8165:0: style: The function 'transfer_get_batchable' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:7470:0: style: The function 'transfer_get_delivery_tag' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:7553:0: style: The function 'transfer_get_message_format' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:7812:0: style: The function 'transfer_get_rcv_settle_mode' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:7979:0: style: The function 'transfer_get_resume' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:7636:0: style: The function 'transfer_get_settled' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:7895:0: style: The function 'transfer_get_state' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:8131:0: style: The function 'transfer_set_aborted' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:8224:0: style: The function 'transfer_set_batchable' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:7861:0: style: The function 'transfer_set_rcv_settle_mode' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:8038:0: style: The function 'transfer_set_resume' is never used. [unusedFunction]
+
+^
+src/amqp_definitions.c:7937:0: style: The function 'transfer_set_state' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
